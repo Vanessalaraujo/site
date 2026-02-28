@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Vanessa ARAUJO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Vanessa Araujo</title>
   <style>
     body {
       font-family: 'Consolas', 'Courier New', monospace;
@@ -44,14 +44,20 @@
     ul li {
       margin-bottom: 10px;
       color: #e0e0e0;
+      line-height: 1.5;
     }
-    .talks {
+    .card {
       background: #1a1a1a;
       padding: 20px;
       margin-bottom: 20px;
       border-radius: 8px;
       border: 1px solid #00ccff;
       box-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+    }
+    .meta {
+      color: #9aa;
+      font-size: 0.95rem;
+      margin-top: 6px;
     }
     footer {
       background: #0d0d0d;
@@ -61,101 +67,160 @@
       margin-top: 30px;
       border-top: 2px solid #00ff99;
     }
-    a {
-      color: #00ccff;
+    a { color: #00ccff; }
+    a:hover { color: #ff00ff; }
+    .tagline {
+      max-width: 980px;
+      margin: 10px auto 0;
+      padding: 0 20px;
+      line-height: 1.5;
+      color: #e0e0e0;
+      text-shadow: none;
     }
-    a:hover {
-      color: #ff00ff;
+    .chips {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .chip {
+      border: 1px solid #00ccff;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.9rem;
+      color: #e0e0e0;
+      background: rgba(0, 204, 255, 0.08);
+      box-shadow: 0 0 10px rgba(0, 204, 255, 0.15);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Vanessa Araujo| 5M1TH</h1>
-    <p>Military at Brazilian Navy | Cyber Warrior | CyberSecurity | Head of Red Team | Threat Hunter | CTF Player | Teacher</p>
+    <h1>Vanessa Araujo</h1>
+    <p class="tagline">
+      Jurista Especialista em GRC, Privacidade e Segurança da Informação |
+      ISO 22301, ISO/IEC 27001, ISO/IEC 27005, ISO/IEC 27701, ISO 31000, ISO 37000 e ISO/IEC 38500 |
+      Governança, Continuidade e Compliance Jurídico
+    </p>
+
+    <div class="chips" aria-label="Destaques">
+      <span class="chip">GRC</span>
+      <span class="chip">Privacidade</span>
+      <span class="chip">Segurança da Informação</span>
+      <span class="chip">Continuidade (BIA/PRD)</span>
+      <span class="chip">Compliance Jurídico</span>
+      <span class="chip">Gestão de Riscos</span>
+    </div>
+
+    <p class="meta">Rio das Ostras, Rio de Janeiro, Brasil</p>
+
     <nav>
-      <a href="#about">About</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#academic">Academic Background</a>
-      <a href="#talks">Talks</a>
-      <a href="#teacher">Teacher Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#competencias">Competências</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About me</h2>
-    <p>Professional with more than 25 years of experience in the Brazilian Navy, working in Information Technology since 2004. Specialized in offensive security, network management, and incident response, with internationally recognized certifications.</p>
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>
+      Sou jurista especializada em Governança, Riscos, Compliance, Privacidade e Segurança da Informação, com trajetória
+      dedicada a fortalecer a resiliência organizacional por meio da integração entre governança corporativa, gestão de riscos,
+      proteção de dados e continuidade de negócios.
+    </p>
+    <p>
+      Com base em mais de 15 anos de atuação em Governança e Compliance Jurídico, desenvolvi expertise em traduzir requisitos
+      normativos e técnicos em estratégias corporativas aplicáveis, promovendo segurança jurídica, maturidade institucional e
+      sustentabilidade operacional.
+    </p>
+    <p>
+      Nos últimos anos, aprofundei minha formação nas principais normas internacionais que sustentam programas de GRC e resiliência,
+      incluindo ISO 22301 (Continuidade de Negócios), ISO/IEC 27001 e 27005 (Segurança da Informação e Gestão de Riscos),
+      ISO/IEC 27701 (Privacidade), ISO 31000 (Gestão de Riscos Corporativos), ISO 37000 (Governança Organizacional) e ISO/IEC 38500
+      (Governança de TI).
+    </p>
+    <p>
+      Minha proposta de valor está em conectar as dimensões jurídica, técnica e estratégica para estruturar frameworks de GRC,
+      políticas corporativas, planos de continuidade (PRD) e análises de impacto (BIA), sempre com foco na proteção de ativos,
+      conformidade regulatória e continuidade das operações críticas. Acredito que governar riscos é proteger valor, e que a
+      verdadeira maturidade digital e institucional nasce da convergência entre ética, tecnologia e estratégia.
+    </p>
   </section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <p>OSCP+ | DCPT | eJPT | CC-ISC² | CNSP | AZ-900 | SC-900 | CLF-C01 | FCF | ISM</p>
+  <section id="competencias">
+    <h2>Principais Competências</h2>
     <ul>
-      <li>OSCP+ (Offensive Security Certified Professional)</li>
-      <li>DCPT (Desec Certified Penetration Tester)</li>
-      <li>eJPT (eLearn Junior Penetration Tester)</li>
-      <li>CC-ISC² (Certified in Cybersecurity)</li>
-      <li>CNSP (Certified Network Security Practitioner)</li>
-      <li>AZ-900 (Microsoft Azure Fundamentals)</li>
-      <li>SC-900 (Microsoft Security, Compliance, and Identity Fundamentals)</li>
-      <li>CLF-C01 (AWS Certified Cloud Practitioner)</li>
-      <li>FCF (Fortinet Certified Fundamentals Cybersecurity)</li>
-      <li>ISO/IEC 27001 Information Security Associate (SkillFront)</li>
-    </ul>
-  </section>
-  
-  <section id="academic">
-    <h2>Academic Background</h2>
-    <ul>
-      <li>CTS in Systems Analysis and Development (UniBF)</li>
-      <li>Postgraduate Student in Network Security (UniBF)</li>
-      <li>Postgraduate Student in Cyber Offensive and Red Team Operations (IMPACTA)</li>
-      <li>Post-Technical in Computer Networks (Brazilian Army)</li>
-      <li>Special Technical Qualification in Telematics (Brazilian Navy)</li>
+      <li>Ensino superior</li>
+      <li>Saúde e bem-estar</li>
+      <li>Microsoft PowerPoint</li>
+      <li>Network Security</li>
+      <li>Data Protection Officer (DPO)</li>
+      <li>Lifelong Learning</li>
+      <li>#EXPOLGPD 2021</li>
     </ul>
   </section>
 
-  <section id="teacher">
-    <h2>Teacher Projects</h2>
-    <p>Holder of a teaching aptitude, working as an instructor in courses both internally and externally.</p>
-    <p>Internally:</p>
-    <ul>
-      <li>Computer Networks</li>
-      <li>Linux Administration</li>
-      <li>Workshops on topics such as networking, Wi-Fi, administration, and security</li>
-    </ul>
-    <p>Externally:</p>
-    <ul>
-      <li>Safe Internet Course for Children and Adolescents – AMN</li>
-      <li>Red Team Course – RedScan Academy</li>
-      <li>"Threat Hunting" Module – Postgraduate Program in Cyber Threat Intelligence – ADINT School</li>
-      <li>Threat Hunting Analyst Course – ADINT School</li>
-    </ul>
-  </section>
-  
-  <section id="talks">
-    <h2>Talks in Cybersecurity Events</h2>
-    <div class="talks">
-      <h3>Talk in Hacking na Web Day RJ 2025</h3>
-      <p>“Red Teamers” O que são? O que comem? Onde vivem?</p>
-      <p>"Técnicas e Ferramentas Avançadas de Red Teaming: Explorando com uso de Exploits e Simulando Ameaças Reais"</p>
+  <section id="experiencia">
+    <h2>Experiência</h2>
+
+    <div class="card">
+      <h3>Academia da Conformidade - AACGC — Diretora Executiva Formadora &amp; Consultora</h3>
+      <p class="meta">novembro de 2023 – Atual · Luanda, Angola</p>
     </div>
-    <div class="talks">
-      <h3>Talk in Rio CyberSec 2025</h3>
-      <p>Red Team: Soft Skills and study environment.</p>
+
+    <div class="card">
+      <h3>RNP — Residente Tecnológico (GRC)</h3>
+      <p class="meta">março de 2025 – setembro de 2025 · Brasil</p>
+      <p class="meta">Residência Tecnológica Hackers do Bem</p>
+    </div>
+
+    <div class="card">
+      <h3>ANPPD® — Membro do Comitê Jurídico Avançado (APDADOS)</h3>
+      <p class="meta">julho de 2021 – agosto de 2023 · Rio de Janeiro, Brasil</p>
+    </div>
+
+    <div class="card">
+      <h3>Autônomo — Advogada</h3>
+      <p class="meta">dezembro de 2004 – agosto de 2023 · Rio de Janeiro, Brasil</p>
+    </div>
+
+    <div class="card">
+      <h3>Vanessa Araujo GRC — Gestão de contratos e negociações</h3>
+      <p class="meta">janeiro de 2004 – agosto de 2023</p>
+    </div>
+
+    <div class="card">
+      <h3>NOCRIO — Gerente de contratos</h3>
+      <p class="meta">dezembro de 2002 – novembro de 2011 · Rio de Janeiro, Brasil</p>
+    </div>
+
+    <div class="card">
+      <h3>JFMO — Gerente de faturamento</h3>
+      <p class="meta">agosto de 1999 – dezembro de 2002 · Rio de Janeiro, Brasil</p>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: thiago.smith.braz@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/smith-braz" target="_blank">LinkedIn Vanessa ARAUJO</a></p>
-    <p>GitHub: <a href="https://github.com/thiagosmith" target="_blank">GitHub Vanessa ARAUJO</a></p>
+  <section id="formacao">
+    <h2>Formação Acadêmica</h2>
+    <ul>
+      <li><strong>Legale Educacional</strong> — Pós-graduação Lato Sensu (Especialização), Lei Geral de Proteção de Dados (dez/2023 – dez/2024)</li>
+      <li><strong>Universidade Veiga de Almeida</strong> — Bacharelado em Direito (1999 – 2002)</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:vanessalaraujo2009@gmail.com">vanessalaraujo2009@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vanessa-araujo-advogadadpolgpd" target="_blank" rel="noopener noreferrer">
+      www.linkedin.com/in/vanessa-araujo-advogadadpolgpd
+    </a></p>
   </section>
 
   <footer>
-    <p>&copy; 2026 Vanessa Araujo- Todos os direitos reservados</p>
+    <p>&copy; 2026 Vanessa Araujo — Todos os direitos reservados</p>
   </footer>
 </body>
 </html>
